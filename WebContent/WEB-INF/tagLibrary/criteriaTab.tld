@@ -1,0 +1,51 @@
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+         version="2.0">
+ 
+     <tlib-version>1.0</tlib-version>
+     <short-name>Criteria Tag Library</short-name>
+     <uri>criteriaTabLibrary</uri>
+  
+     <tag>
+         <name>criteria</name>
+         <tag-class>com.tagClasses.CriteriaTag</tag-class>
+         <body-content>empty</body-content>
+         <attribute>
+             <name>criteriaList</name>
+             <type>java.util.LinkedList</type>
+             <rtexprvalue>true</rtexprvalue>
+         </attribute>
+         <attribute>
+             <name>fieldsList</name>
+             <type>java.util.LinkedList</type>
+             <required>false</required>
+             <rtexprvalue>true</rtexprvalue>
+         </attribute>
+         <attribute>
+             <name>createEmptyTemplate</name>
+             <type>java.lang.Boolean</type>
+             <required>false</required>
+             <rtexprvalue>true</rtexprvalue>
+         </attribute>
+         <attribute>
+             <name>moduleList</name>
+             <type>java.lang.HashMap</type>
+             <required>false</required>
+             <rtexprvalue>true</rtexprvalue>
+         </attribute>
+         <attribute>
+         <name>selectedModule</name>
+         <type>java.lang.String</type>
+         <required>false</required>
+         <rtexprvalue>true</rtexprvalue>
+         </attribute>
+         <attribute>
+         <name>createModuleDropdown</name>
+         <type>java.lang.Boolean</type>
+          <required>false</required>
+          <rtexprvalue>true</rtexprvalue>
+         </attribute>
+     </tag>
+</taglib>
+
